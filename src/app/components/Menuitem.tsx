@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import ProductCard from "./ProductCard";
-import { Product } from "../../../pages/types";
+import { Product } from "@/pages/types";
 
 const Menuitem = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -17,6 +17,7 @@ const Menuitem = () => {
     const fetchProducts = async () => {
       try {
         const response = await fetch("/api/products");
+
 
         if (!response.ok) {
           throw new Error(`Failed to fetch products: ${response.status} ${response.statusText}`);
