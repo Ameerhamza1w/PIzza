@@ -4,3 +4,4 @@ export interface Product {
     price:number;
     image:string;
 }
+export default Product;
