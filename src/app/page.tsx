@@ -15,7 +15,7 @@ import Menuitem from "./components/Menuitem";
 
 export default function App() {
   return (
-    <div className="bg-gradient-to-r from-black to-slate-700 min-h-screen">
+    <div className="bg-gradient-to-r from-black to-slate-600 min-h-screen">
       <Navbar />
       <Carousel />
       <Progressor />
